@@ -1,13 +1,23 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "manifest_id": "DCELL-REALITY-SYNC-SANITIZED-PUBLIC-SNAPSHOT-MANIFEST-v0.1",
-  "status": "SANITIZED_SINGLE_ROOT_CANDIDATE_NOT_PUBLISHED",
-  "generated_at": "2026-08-12T07:20:37Z",
+  "status": "PRIVATE_STAGING_ACTIVATION_METADATA_PREPARED_NOT_PUBLIC",
+  "generated_at": "2026-08-12T14:18:25Z",
   "preparation_basis": [
     "PUBLIC-RESEARCH-RELEASE-REVIEW-v0.1",
     "INDEPENDENT-PUBLICATION-FIX-VERIFICATION-v0.1"
   ],
   "public_snapshot_strategy": "SANITIZED_SNAPSHOT_ROOT",
+  "sanitized_root_commit": "bb3ccd9f7c9bd1dc4dccdd6eb300513d0ce2cb63",
+  "sanitized_root_tree": "1ea21381e9ca8f620cbd541903bb1511128fff20",
+  "repository": {
+    "full_name": "joy7758/dcell-reality-sync",
+    "visibility": "PRIVATE",
+    "remote_name": "origin",
+    "default_branch": "main",
+    "description": "Documentation-and-schema-only research prototype for a candidate semantic Reality Synchronization Layer for long-lived agents and world models.",
+    "homepage": null
+  },
   "source_internal_history_included": false,
   "source_personal_commit_email_included": false,
   "current_whitepaper_version": "0.1.2",
@@ -69,7 +79,7 @@
     },
     {
       "path": "CITATION.cff",
-      "sha256": "8b767e99ef52be7350bb7f432b7cb64ab3cd5ba13b392ae45d1c3b78d5b48bc3",
+      "sha256": "881cf140b6e2fec4e1f8d13da236ec59bc9dc479ea50683e5123eac6088b60c8",
       "classification": "PUBLIC_CANONICAL"
     },
     {
@@ -79,12 +89,12 @@
     },
     {
       "path": "README.md",
-      "sha256": "741d538d026f542ded86c01a1a08d1ed1aeb3907e1d0ff0bcb9229dc9938911e",
+      "sha256": "bd8248fa22f3e3a6e26b79794599d33fcfa0f201d0d5cf1eb0fbcb3dc7077dad",
       "classification": "PUBLIC_CANONICAL"
     },
     {
       "path": "STATUS.json",
-      "sha256": "840262b1a3cd8d1c886647c6919a4e39cfb7d6c453c999d60a142aeb6edeeb20",
+      "sha256": "8566267d5550c3b8a5f248ff38c100e4ab5e06984b94120fdf85b00570498dcf",
       "classification": "PUBLIC_CANONICAL"
     },
     {
@@ -215,8 +225,15 @@
   ],
   "manifest_self_digest_included": false,
   "manifest_self_exclusion_reason": "SELF_REFERENTIAL_DIGEST_AVOIDANCE",
-  "remote_configured": false,
-  "push_executed": false,
+  "remote_configured": true,
+  "push_executed": true,
+  "initial_push_executed": true,
+  "initial_root_snapshot_verified": true,
+  "publication_activation_metadata_prepared": true,
+  "publication_activation_metadata_commit_recorded": false,
+  "publication_activation_metadata_commit_exclusion_reason": "SELF_REFERENTIAL_COMMIT_ID_AVOIDANCE",
+  "public_visibility_switch_authorized": false,
+  "public_visibility_switch_executed": false,
   "tag_created": false,
   "release_created": false,
   "publication_status": "NOT_PUBLISHED",

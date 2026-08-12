@@ -8,6 +8,7 @@ authors:
     given-names: "Bin"
     orcid: "https://orcid.org/0009-0002-8861-1481"
 license: Apache-2.0
+repository-code: "https://github.com/joy7758/dcell-reality-sync"
 abstract: >-
   Documentation-and-schema-only research prototype for a candidate,
   evidence-backed, temporally explicit, and governance-bounded

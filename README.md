@@ -9,30 +9,42 @@
 核心研究问题是：当现实世界持续变化时，能否用有边界、可追溯、保留冲突与不确定性的
 Cell 记录，帮助智能体识别其世界模型中的陈旧状态和现实偏差？
 
-## Public Snapshot Status
+## Private Staging Status
 
-This repository is a local sanitized single-root public snapshot candidate. It has no remote and has not
-been pushed, tagged, released, published, scientifically validated, or authorized for implementation.
+This repository is a sanitized public snapshot candidate staged in a private GitHub repository. Its
+sanitized root snapshot has been pushed to the private staging repository and verified. The remote is
+`origin`, the GitHub repository identity is `joy7758/dcell-reality-sync`, and the current visibility is
+`PRIVATE`.
+
+The source internal Git history and its private commit email are not included in this candidate history.
+After this task, the candidate has two sanitized commits: the sanitized root snapshot and the publication
+activation metadata preparation commit. The public visibility switch is not authorized. The push scope
+authorized for this task is consumed after the second private-staging push; no further push is authorized
+without a new gate.
 
 The current whitepaper is v0.1.2 with status
-`RESEARCH_DRAFT_EDITORIALLY_CORRECTED_NOT_VALIDATED`. The source internal Git history and its private
-commit email are not included in this candidate history. This candidate is intended to contain exactly one
-root commit. It currently has no remote, push authorization, public-release authorization, or implementation
-authorization. The Benchmark has not been executed and scientific validation has not been established. The
-only next gate is `INDEPENDENT_PUBLIC_SNAPSHOT_VERIFICATION_ONLY`.
+`RESEARCH_DRAFT_EDITORIALLY_CORRECTED_NOT_VALIDATED`. The Benchmark has not been executed and scientific
+validation has not been established. This repository is not public, not published, not released, not
+scientifically validated, and not authorized for implementation. The only next gate is
+`INDEPENDENT_PRIVATE_REMOTE_STAGING_AND_PUBLICATION_ACTIVATION_METADATA_VERIFICATION_ONLY`.
 
 Internal commit hashes retained in historical review files may not resolve in this single-root snapshot.
 They record the internal research process only and do not describe this candidate's public Git history.
 
-## 公开快照状态
+## 私有暂存状态
 
-本仓库是一个本地、经清理的单根公开快照候选。它没有 remote，尚未被 push、tag、release 或发布，
-尚未获得科学验证，也未获得实现授权。
+本仓库是暂存于私有 GitHub 仓库中的经清理公开快照候选。其经清理的根快照已推送至私有暂存仓库
+并完成核验。remote 名称为 `origin`，GitHub 仓库身份为 `joy7758/dcell-reality-sync`，当前
+visibility 为 `PRIVATE`。
 
-当前白皮书为 v0.1.2，状态为 `RESEARCH_DRAFT_EDITORIALLY_CORRECTED_NOT_VALIDATED`。源内部 Git 历史
-及其私人提交邮箱未包含在本候选 Git 历史中。本候选预计且最终必须只有一个根提交。当前没有
-remote、push 授权、公开发布授权或实现授权；Benchmark 未执行，scientific validation 未建立。
-当前唯一下一 gate 为 `INDEPENDENT_PUBLIC_SNAPSHOT_VERIFICATION_ONLY`。
+源内部 Git 历史及其私人提交邮箱未包含在本候选 Git 历史中。本任务完成后，候选包含两笔经清理
+提交：sanitized root snapshot 和 publication activation metadata preparation。public visibility switch
+尚未授权。本任务授权的 push 范围在第二次私有暂存 push 后即消耗完毕；未经新 gate 不得继续 push。
+
+当前白皮书为 v0.1.2，状态为 `RESEARCH_DRAFT_EDITORIALLY_CORRECTED_NOT_VALIDATED`。Benchmark 未执行，
+scientific validation 未建立。本仓库尚未公开、尚未发布、尚未创建 release、尚未获得科学验证，
+也未获得实现授权。当前唯一下一 gate 为
+`INDEPENDENT_PRIVATE_REMOTE_STAGING_AND_PUBLICATION_ACTIVATION_METADATA_VERIFICATION_ONLY`。
 
 历史评审文件中的内部 commit hash 可能无法在本单根快照中解析；这些 hash 只记录内部研究过程，
 不表示本候选的公开仓库历史。
@@ -62,17 +74,24 @@ PUBLIC_RESEARCH_RELEASE_REVIEW_COMPLETED=true
 PUBLIC_RESEARCH_RELEASE_REVIEW_DECISION=PASS_WITH_REQUIRED_PUBLICATION_FIXES
 PUBLIC_RELEASE_FIXES_APPLIED=true
 LICENSE_STATUS=APACHE-2.0
-PUBLIC_RELEASE_MANIFEST_STATUS=SANITIZED_SINGLE_ROOT_CANDIDATE_NOT_PUBLISHED
-PUBLIC_SNAPSHOT_STATUS=LOCAL_SANITIZED_SINGLE_ROOT_CANDIDATE_NOT_PUBLISHED
+PUBLIC_RELEASE_MANIFEST_STATUS=PRIVATE_STAGING_ACTIVATION_METADATA_PREPARED_NOT_PUBLIC
+PUBLIC_SNAPSHOT_STATUS=PRIVATE_STAGING_ACTIVATION_METADATA_PREPARED_NOT_PUBLIC
 PUBLIC_RESEARCH_DRAFT_AUTHORIZED=false
 IMPLEMENTATION_AUTHORIZED=false
-REMOTE_CONFIGURED=false
+REMOTE_CONFIGURED=true
+REMOTE_NAME=origin
+REMOTE_REPOSITORY_FULL_NAME=joy7758/dcell-reality-sync
+REMOTE_REPOSITORY_VISIBILITY=PRIVATE
+INITIAL_PRIVATE_STAGING_PUSH_EXECUTED=true
 PUBLICATION_STATUS=NOT_PUBLISHED
 RELEASE_STATUS=NOT_RELEASED
 THIS_CANDIDATE_PUSH_AUTHORIZED=false
+PUBLIC_VISIBILITY_SWITCH_AUTHORIZED=false
+PUBLIC_VISIBILITY_SWITCH_EXECUTED=false
+FURTHER_PUSH_AUTHORIZED=false
 SOURCE_INTERNAL_HISTORY_INCLUDED=false
 SOURCE_PERSONAL_COMMIT_EMAIL_INCLUDED=false
-NEXT_GATE=INDEPENDENT_PUBLIC_SNAPSHOT_VERIFICATION_ONLY
+NEXT_GATE=INDEPENDENT_PRIVATE_REMOTE_STAGING_AND_PUBLICATION_ACTIVATION_METADATA_VERIFICATION_ONLY
 ARCHITECTURE_PHASE_CLOSED=true
 CLAIM_BOUNDARY_FROZEN=true
 CLAIM_BOUNDARY_VERSION=0.1
@@ -142,9 +161,10 @@ Apache License, Version 2.0 授权。
 
 ## Public history boundary / 公开历史边界
 
-本候选从已验证的源内容树创建，不包含源内部 Git 历史和私人提交邮箱。候选 Git 历史只允许一个
-使用所有者 GitHub noreply 身份的根提交。当前未配置 remote，且没有 push、tag、release 或公开
-发布授权。
+本候选从已核验的源内容树创建，不包含源内部 Git 历史和私人提交邮箱。候选 Git 历史包含使用所有者
+GitHub noreply 身份创建的经清理根提交，以及一笔公开激活元数据准备提交。当前仅配置 `origin`，
+其目标为私有暂存仓库 `joy7758/dcell-reality-sync`。本任务授权的两次私有 push 已消耗完毕；没有
+后续 push、tag、release、公开可见性切换或公开发布授权。
 
 ## 候选数据流
 
@@ -230,6 +250,7 @@ Whitepaper v0.1 原稿保持不变。Whitepaper v0.1.1 以 Independent Whitepape
 `PASS_FOR_PUBLIC_RESEARCH_RELEASE_REVIEW`；公开研究发布审查结论为
 `PASS_WITH_REQUIRED_PUBLICATION_FIXES`。这些结论不构成公开研究草案、发布或实现授权。
 
-本候选只完成本地经清理单根快照准备。当前下一 gate 仅为
-`INDEPENDENT_PUBLIC_SNAPSHOT_VERIFICATION_ONLY`。在新的明确任务前不实现架构组件、不生成
-Dataset、不运行 Benchmark、不调用模型，也不形成 DCell 优越性或科学验证主张；当前候选仍未发布。
+本候选只完成私有远程暂存与公开激活元数据准备。当前下一 gate 仅为
+`INDEPENDENT_PRIVATE_REMOTE_STAGING_AND_PUBLICATION_ACTIVATION_METADATA_VERIFICATION_ONLY`。在新的
+明确任务前不继续 push、不切换 public、不实现架构组件、不生成 Dataset、不运行 Benchmark、
+不调用模型，也不形成 DCell 优越性或科学验证主张；当前候选仍未公开、未发布。
