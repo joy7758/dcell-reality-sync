@@ -1,0 +1,115 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "artifact_kind": "RESEARCH_SOURCE_MANIFEST",
+  "project_id": "DCELL-REALITY-SYNC",
+  "observed_at": "2026-08-11T19:11:44Z",
+  "sources": [
+    {
+      "source_id": "W3C-PROV-DM",
+      "role": "RELATED_DATA_AND_STATE_REPRESENTATION_REFERENCE",
+      "publisher": "World Wide Web Consortium",
+      "title": "PROV-DM: The PROV Data Model",
+      "url": "https://www.w3.org/TR/prov-dm/",
+      "source_kind": "W3C_RECOMMENDATION",
+      "claim_scope": "PROVENANCE_ENTITIES_ACTIVITIES_AGENTS_RELATIONS_TIME_AND_EXTENSIBILITY",
+      "observed_at": "2026-08-11T19:51:40Z",
+      "write_performed": false
+    },
+    {
+      "source_id": "WIKIDATA-DATA-MODEL",
+      "role": "RELATED_DATA_AND_STATE_REPRESENTATION_REFERENCE",
+      "publisher": "Wikidata",
+      "title": "Wikidata Data Model",
+      "url": "https://www.wikidata.org/wiki/Wikidata:Data_model/en",
+      "source_kind": "OFFICIAL_PROJECT_DATA_MODEL",
+      "claim_scope": "ENTITY_STATEMENT_QUALIFIER_REFERENCE_RANK_UNKNOWN_NO_VALUE_AND_TIME_PATTERNS",
+      "observed_at": "2026-08-11T19:51:40Z",
+      "write_performed": false
+    },
+    {
+      "source_id": "MARTIN-FOWLER-EVENT-SOURCING",
+      "role": "RELATED_DATA_AND_STATE_REPRESENTATION_REFERENCE",
+      "publisher": "Martin Fowler",
+      "title": "Event Sourcing",
+      "url": "https://martinfowler.com/eaaDev/EventSourcing.html",
+      "source_kind": "ARCHITECTURE_PATTERN_DRAFT",
+      "claim_scope": "EVENT_SEQUENCE_REBUILD_TEMPORAL_QUERY_REPLAY_CORRECTION_AND_OUT_OF_ORDER_PATTERNS",
+      "observed_at": "2026-08-11T19:51:40Z",
+      "write_performed": false
+    },
+    {
+      "source_id": "WORLD-LABS-MARBLE-DOCS",
+      "role": "WORLD_MODEL_BOUNDARY_OFFICIAL_SOURCE",
+      "publisher": "World Labs",
+      "title": "Welcome to Marble",
+      "url": "https://docs.worldlabs.ai/index",
+      "source_kind": "OFFICIAL_DOCUMENTATION",
+      "claim_scope": "PERSISTENT_3D_WORLDS",
+      "observed_at": "2026-08-11T19:11:44Z",
+      "write_performed": false
+    },
+    {
+      "source_id": "WORLD-LABS-WORLD-API",
+      "role": "WORLD_MODEL_BOUNDARY_OFFICIAL_SOURCE",
+      "publisher": "World Labs",
+      "title": "Announcing the World API",
+      "url": "https://www.worldlabs.ai/blog/announcing-the-world-api",
+      "source_kind": "OFFICIAL_ANNOUNCEMENT",
+      "claim_scope": "EXPLORABLE_3D_WORLD_GENERATION_API",
+      "observed_at": "2026-08-11T19:11:44Z",
+      "write_performed": false
+    },
+    {
+      "source_id": "META-FAIR-VJEPA2",
+      "role": "WORLD_MODEL_BOUNDARY_OFFICIAL_SOURCE",
+      "publisher": "Meta FAIR",
+      "title": "V-JEPA 2 / V-JEPA 2-AC / V-JEPA 2.1 official repository",
+      "url": "https://github.com/facebookresearch/vjepa2",
+      "source_kind": "OFFICIAL_GITHUB_REPOSITORY",
+      "claim_scope": "V_JEPA_2_1_HIGH_QUALITY_AND_TEMPORALLY_CONSISTENT_DENSE_FEATURES",
+      "observed_at": "2026-08-11T19:11:44Z",
+      "write_performed": false
+    },
+    {
+      "source_id": "META-FAIR-JEPA-WMS",
+      "role": "WORLD_MODEL_BOUNDARY_OFFICIAL_SOURCE",
+      "publisher": "Meta FAIR",
+      "title": "JEPA-WMs official repository",
+      "url": "https://github.com/facebookresearch/jepa-wms",
+      "source_kind": "OFFICIAL_GITHUB_REPOSITORY",
+      "claim_scope": "ENVIRONMENT_PREDICTION_AND_PHYSICAL_PLANNING",
+      "observed_at": "2026-08-11T19:11:44Z",
+      "write_performed": false
+    },
+    {
+      "source_id": "GOOGLE-DEEPMIND-D4RT",
+      "role": "WORLD_MODEL_BOUNDARY_OFFICIAL_SOURCE",
+      "publisher": "Google DeepMind",
+      "title": "D4RT: Teaching AI to see the world in four dimensions",
+      "url": "https://deepmind.google/blog/d4rt-teaching-ai-to-see-the-world-in-four-dimensions/",
+      "source_kind": "OFFICIAL_RESEARCH_PAGE",
+      "claim_scope": "DYNAMIC_4D_RECONSTRUCTION_AND_TRACKING",
+      "observed_at": "2026-08-11T19:11:44Z",
+      "write_performed": false
+    },
+    {
+      "source_id": "GOOGLE-DEEPMIND-GENIE-3",
+      "role": "WORLD_MODEL_BOUNDARY_OFFICIAL_SOURCE",
+      "publisher": "Google DeepMind",
+      "title": "Genie 3: A new frontier for world models",
+      "url": "https://deepmind.google/blog/genie-3-a-new-frontier-for-world-models/",
+      "source_kind": "OFFICIAL_RESEARCH_PAGE",
+      "claim_scope": "INTERACTIVE_ENVIRONMENT_SIMULATION",
+      "observed_at": "2026-08-11T19:11:44Z",
+      "write_performed": false
+    }
+  ],
+  "copied_code": false,
+  "copied_schema": false,
+  "external_runtime_state_imported": false,
+  "public_source_count": 9,
+  "local_only_relationships_removed": true,
+  "unavailable_internal_governance_relationship_removed": true,
+  "source_scope": "PUBLIC_RESEARCH_AND_PRODUCT_SOURCES_ONLY_WITH_BOUNDED_CLAIM_SCOPE",
+  "source_review_ne_external_adoption": true
+}

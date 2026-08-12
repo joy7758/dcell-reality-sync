@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use this research prototype, please cite it using the metadata in this file."
+type: software
+title: "Reality Synchronization Layer for Long-Lived Agents and World Models"
+version: "0.1.2"
+authors:
+  - family-names: "Zhang"
+    given-names: "Bin"
+    orcid: "https://orcid.org/0009-0002-8861-1481"
+license: Apache-2.0
+abstract: >-
+  Documentation-and-schema-only research prototype for a candidate,
+  evidence-backed, temporally explicit, and governance-bounded
+  semantic reality synchronization layer for long-lived agents
+  and world models.

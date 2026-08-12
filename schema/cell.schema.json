@@ -1,0 +1,232 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.invalid/dcell-reality-sync/cell.schema.v0.1.json",
+  "title": "Reality Synchronization Cell Research Record v0.1",
+  "description": "Research-only record for evidence-bounded comparison between observed reality and a world-model projection. Not a DCell classification, runtime contract, truth record, or update authorization.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "artifact_kind",
+    "schema_version",
+    "document_status",
+    "cell_id",
+    "identity",
+    "reality_target",
+    "sources",
+    "observations",
+    "claims",
+    "evidence_refs",
+    "state",
+    "synchronization_assessment",
+    "history",
+    "conflicts",
+    "uncertainties",
+    "update_proposal",
+    "truth_boundaries",
+    "authorization",
+    "synthetic"
+  ],
+  "properties": {
+    "artifact_kind": {"const": "REALITY_SYNCHRONIZATION_CELL_RESEARCH_RECORD"},
+    "schema_version": {"const": "0.1"},
+    "document_status": {"const": "RESEARCH_DRAFT"},
+    "cell_id": {
+      "type": "string",
+      "pattern": "^rsc-[a-z0-9][a-z0-9-]{2,63}$",
+      "description": "Research-local identifier; never a DBOS entity_id or external registration."
+    },
+    "identity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "research_status", "classification_status"],
+      "properties": {
+        "name": {"type": "string", "minLength": 1, "maxLength": 160},
+        "research_status": {"const": "SYNTHETIC_OR_CONCEPTUAL_RECORD"},
+        "classification_status": {"const": "NOT_EVALUATED_AS_DCELL"}
+      }
+    },
+    "reality_target": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["target_ref", "target_type", "scope", "owner_status"],
+      "properties": {
+        "target_ref": {"type": "string", "minLength": 1},
+        "target_type": {"type": "string", "minLength": 1},
+        "scope": {"type": "string", "minLength": 1},
+        "owner_status": {"enum": ["EXTERNAL", "UNKNOWN"]}
+      }
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/source"}
+    },
+    "observations": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/observation"}
+    },
+    "claims": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/claim"}
+    },
+    "evidence_refs": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/evidenceRef"}
+    },
+    "state": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["world_model_projection", "reality_projection", "projection_time"],
+      "properties": {
+        "world_model_projection": {"type": "object"},
+        "reality_projection": {"type": "object"},
+        "projection_time": {"type": "string", "format": "date-time"}
+      }
+    },
+    "synchronization_assessment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "freshness", "divergence", "coverage", "basis_refs", "assessed_at"],
+      "properties": {
+        "status": {"enum": ["NOT_ASSESSED", "IN_SYNC_CANDIDATE", "DIVERGENCE_OBSERVED", "CONFLICTED", "UNKNOWN"]},
+        "freshness": {"enum": ["CURRENT_WITHIN_DECLARED_WINDOW", "STALE", "UNKNOWN"]},
+        "divergence": {"enum": ["NONE_OBSERVED", "PRESENT", "CONFLICTED", "UNKNOWN", "NOT_ASSESSED"]},
+        "coverage": {"enum": ["SUFFICIENT_FOR_DECLARED_SCOPE", "PARTIAL", "INSUFFICIENT", "UNKNOWN"]},
+        "basis_refs": {
+          "type": "array",
+          "minItems": 1,
+          "items": {"type": "string", "minLength": 1}
+        },
+        "assessed_at": {"type": "string", "format": "date-time"}
+      }
+    },
+    "history": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/historyEvent"}
+    },
+    "conflicts": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/conflict"}
+    },
+    "uncertainties": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"type": "string", "minLength": 1}
+    },
+    "update_proposal": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "target_projection", "proposed_changes", "reason_refs", "application_authorized"],
+      "properties": {
+        "status": {"enum": ["NONE", "DRAFT_RESEARCH_PROPOSAL", "BLOCKED_INSUFFICIENT_EVIDENCE"]},
+        "target_projection": {"type": "string"},
+        "proposed_changes": {"type": "array", "items": {"type": "string"}},
+        "reason_refs": {"type": "array", "items": {"type": "string"}},
+        "application_authorized": {"const": false}
+      }
+    },
+    "truth_boundaries": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "observation_ne_fact",
+        "evidence_reference_ne_verification",
+        "schema_conformance_ne_reality_truth",
+        "synchronization_assessment_ne_model_update"
+      ],
+      "properties": {
+        "observation_ne_fact": {"const": true},
+        "evidence_reference_ne_verification": {"const": true},
+        "schema_conformance_ne_reality_truth": {"const": true},
+        "synchronization_assessment_ne_model_update": {"const": true}
+      }
+    },
+    "authorization": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["runtime", "reality_write", "model_write", "external_action", "publication"],
+      "properties": {
+        "runtime": {"const": false},
+        "reality_write": {"const": false},
+        "model_write": {"const": false},
+        "external_action": {"const": false},
+        "publication": {"const": false}
+      }
+    },
+    "synthetic": {"const": true}
+  },
+  "$defs": {
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source_id", "source_ref", "source_kind", "observed_at", "availability"],
+      "properties": {
+        "source_id": {"type": "string", "pattern": "^src-[a-z0-9][a-z0-9-]{2,63}$"},
+        "source_ref": {"type": "string", "minLength": 1},
+        "source_kind": {"enum": ["PRIMARY_OBSERVATION", "EXTERNAL_REPORT", "MODEL_OUTPUT", "SYNTHETIC_FIXTURE", "UNKNOWN"]},
+        "observed_at": {"type": "string", "format": "date-time"},
+        "availability": {"enum": ["AVAILABLE", "UNAVAILABLE", "PARTIAL", "UNKNOWN"]}
+      }
+    },
+    "observation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["observation_id", "source_id", "observation_kind", "observed_at", "payload", "verification_status"],
+      "properties": {
+        "observation_id": {"type": "string", "pattern": "^obs-[a-z0-9][a-z0-9-]{2,63}$"},
+        "source_id": {"type": "string", "pattern": "^src-[a-z0-9][a-z0-9-]{2,63}$"},
+        "observation_kind": {"enum": ["OBSERVED", "REPORTED", "INFERRED", "UNKNOWN"]},
+        "observed_at": {"type": "string", "format": "date-time"},
+        "payload": {"type": "object"},
+        "verification_status": {"enum": ["NOT_VERIFIED", "CHECKED_FOR_SOURCE_MATCH", "CONFLICTED", "UNKNOWN"]}
+      }
+    },
+    "claim": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["claim_id", "statement", "support_status", "observation_refs", "evidence_refs"],
+      "properties": {
+        "claim_id": {"type": "string", "pattern": "^clm-[a-z0-9][a-z0-9-]{2,63}$"},
+        "statement": {"type": "string", "minLength": 1},
+        "support_status": {"enum": ["SUPPORTED_FOR_DECLARED_SCOPE", "PARTIAL", "CONFLICTED", "UNSUPPORTED", "UNKNOWN"]},
+        "observation_refs": {"type": "array", "items": {"type": "string"}},
+        "evidence_refs": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "evidenceRef": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["evidence_ref_id", "material_ref", "supports_claims", "verification_status"],
+      "properties": {
+        "evidence_ref_id": {"type": "string", "pattern": "^evr-[a-z0-9][a-z0-9-]{2,63}$"},
+        "material_ref": {"type": "string", "minLength": 1},
+        "supports_claims": {"type": "array", "items": {"type": "string"}},
+        "verification_status": {"enum": ["NOT_VERIFIED", "SOURCE_MATCH_ONLY", "CONFLICTED", "UNAVAILABLE", "UNKNOWN"]}
+      }
+    },
+    "historyEvent": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["event_id", "event_time", "event_kind", "basis_refs", "summary"],
+      "properties": {
+        "event_id": {"type": "string", "pattern": "^evt-[a-z0-9][a-z0-9-]{2,63}$"},
+        "event_time": {"type": "string", "format": "date-time"},
+        "event_kind": {"enum": ["OBSERVATION_ADDED", "STATE_PROJECTED", "CONFLICT_RECORDED", "ASSESSMENT_CHANGED", "UNKNOWN"]},
+        "basis_refs": {"type": "array", "items": {"type": "string"}},
+        "summary": {"type": "string", "minLength": 1}
+      }
+    },
+    "conflict": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["conflict_id", "ref_a", "ref_b", "status"],
+      "properties": {
+        "conflict_id": {"type": "string", "pattern": "^cft-[a-z0-9][a-z0-9-]{2,63}$"},
+        "ref_a": {"type": "string", "minLength": 1},
+        "ref_b": {"type": "string", "minLength": 1},
+        "status": {"enum": ["OPEN", "RESOLVED_WITH_EXTERNAL_DECISION", "UNKNOWN"]}
+      }
+    }
+  }
+}

@@ -1,0 +1,226 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "manifest_id": "DCELL-REALITY-SYNC-SANITIZED-PUBLIC-SNAPSHOT-MANIFEST-v0.1",
+  "status": "SANITIZED_SINGLE_ROOT_CANDIDATE_NOT_PUBLISHED",
+  "generated_at": "2026-08-12T07:20:37Z",
+  "preparation_basis": [
+    "PUBLIC-RESEARCH-RELEASE-REVIEW-v0.1",
+    "INDEPENDENT-PUBLICATION-FIX-VERIFICATION-v0.1"
+  ],
+  "public_snapshot_strategy": "SANITIZED_SNAPSHOT_ROOT",
+  "source_internal_history_included": false,
+  "source_personal_commit_email_included": false,
+  "current_whitepaper_version": "0.1.2",
+  "license": {
+    "spdx": "Apache-2.0",
+    "path": "LICENSE"
+  },
+  "citation": {
+    "cff_version": "1.2.0",
+    "path": "CITATION.cff"
+  },
+  "claim_boundary": {
+    "version": "0.1",
+    "world_model_internal_state_access": false,
+    "semantic_synchronization_scope_only": true,
+    "benchmark_executed": false,
+    "scientific_validation": "NOT_ESTABLISHED"
+  },
+  "sanitization": {
+    "internal_git_history_removed": true,
+    "personal_commit_email_removed_from_public_history": true,
+    "real_local_absolute_path_count": 0,
+    "private_email_count": 0,
+    "excluded_internal_artifact_count": 3,
+    "historical_markdown_link_delinked_count": 1,
+    "unauthorized_semantic_change_found": false
+  },
+  "excluded_internal_paths": [
+    {
+      "path": "governance/constitution-source-lock.json",
+      "reason": "INTERNAL_LOCAL_GOVERNANCE_CANDIDATE_NOT_SUBMITTED"
+    },
+    {
+      "path": "governance/dba-filing-candidate.json",
+      "reason": "INTERNAL_LOCAL_GOVERNANCE_CANDIDATE_NOT_SUBMITTED"
+    },
+    {
+      "path": "governance/dba-progress-report.md",
+      "reason": "INTERNAL_LOCAL_GOVERNANCE_CANDIDATE_NOT_SUBMITTED"
+    }
+  ],
+  "review_chain": [
+    "evaluation/independent-whitepaper-review-v0.1.md",
+    "evaluation/independent-whitepaper-revision-verification-v0.1.md",
+    "evaluation/independent-editorial-correction-verification-v0.1.md",
+    "evaluation/public-research-release-review-v0.1.md",
+    "evaluation/independent-publication-fix-verification-v0.1.md"
+  ],
+  "included_files": [
+    {
+      "path": ".gitignore",
+      "sha256": "32a340cd7adfdce85bd9012924acadbb83c357a705ceb83a82df5445d5fea702",
+      "classification": "PUBLIC_CANONICAL"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "5a6f7da49e01d71f7dfff6f651665a004b3ecd4fa7ab2ad166d2d6093e83c7fd",
+      "classification": "PUBLIC_CANONICAL"
+    },
+    {
+      "path": "CITATION.cff",
+      "sha256": "8b767e99ef52be7350bb7f432b7cb64ab3cd5ba13b392ae45d1c3b78d5b48bc3",
+      "classification": "PUBLIC_CANONICAL"
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "classification": "PUBLIC_CANONICAL"
+    },
+    {
+      "path": "README.md",
+      "sha256": "741d538d026f542ded86c01a1a08d1ed1aeb3907e1d0ff0bcb9229dc9938911e",
+      "classification": "PUBLIC_CANONICAL"
+    },
+    {
+      "path": "STATUS.json",
+      "sha256": "840262b1a3cd8d1c886647c6919a4e39cfb7d6c453c999d60a142aeb6edeeb20",
+      "classification": "PUBLIC_CANONICAL"
+    },
+    {
+      "path": "agent-index.json",
+      "sha256": "5389ce732127c69b03cc2c3f3eecdc36253bd400a716c8fa0e2e7ab84a85069b",
+      "classification": "PUBLIC_CANONICAL"
+    },
+    {
+      "path": "benchmark/reality-drift-benchmark.md",
+      "sha256": "e268a8c4a9d0503d138c4bf8f5546930306a2ee2b0148ea901c45e8ad0896be2",
+      "classification": "PUBLIC_RESEARCH_ARTIFACT"
+    },
+    {
+      "path": "dataset/reality-drift-dataset-spec.md",
+      "sha256": "0882596d42f68b2064fec5f46ca6dfcca5225f6bf32262eb9b072fa51fd5733b",
+      "classification": "PUBLIC_RESEARCH_ARTIFACT"
+    },
+    {
+      "path": "docs/architecture.md",
+      "sha256": "5b21d2dbbb6b982471e7268d82fa4385f615bec0b78b131a062402f6527ea19e",
+      "classification": "PUBLIC_RESEARCH_ARTIFACT"
+    },
+    {
+      "path": "docs/claims-and-nonclaims.md",
+      "sha256": "485249a0e8d4f8a183ddb23c4747f2cea2aa870397a99892ab86c0612a222286",
+      "classification": "PUBLIC_GOVERNANCE_BOUNDARY"
+    },
+    {
+      "path": "docs/reality-synchronization-layer-reference-architecture-v0.1.md",
+      "sha256": "2a6e64a14595257d1260db4b528059126da42b2b9b71c5ff6c582fdcbeb4d17e",
+      "classification": "PUBLIC_RESEARCH_ARTIFACT"
+    },
+    {
+      "path": "docs/reality-synchronization-layer-whitepaper-v0.1.1.md",
+      "sha256": "e4e5c0ae4cbb1bb628227e86b20022e12ebc1175ec281ad1b067111caab8fec9",
+      "classification": "PUBLIC_HISTORICAL"
+    },
+    {
+      "path": "docs/reality-synchronization-layer-whitepaper-v0.1.2.md",
+      "sha256": "0e1632b708eb5d70b886b25616c6127dcf8a6dac76fe5a6f79448b499bb1120d",
+      "classification": "PUBLIC_RESEARCH_ARTIFACT"
+    },
+    {
+      "path": "docs/reality-synchronization-layer-whitepaper-v0.1.md",
+      "sha256": "dcacec7115798988c27501edf9b9a4ddd36e35eb36a7675eb803ce2cef46078e",
+      "classification": "PUBLIC_HISTORICAL"
+    },
+    {
+      "path": "docs/research-scope.md",
+      "sha256": "88ab76fdf7f03c989328b1b9af3147e2ce9b3fc174cf2fc419e369cde9c96f4b",
+      "classification": "PUBLIC_GOVERNANCE_BOUNDARY"
+    },
+    {
+      "path": "evaluation/README.md",
+      "sha256": "4ed085d47eb63bee472b465e1354283593392754cb79b6a658f7745b120fa42c",
+      "classification": "PUBLIC_EVALUATION"
+    },
+    {
+      "path": "evaluation/independent-editorial-correction-verification-v0.1.md",
+      "sha256": "fd3873f97f3869a3e95bbe955e08d5d69a75f8adca207b6fd08ca1b28998e901",
+      "classification": "PUBLIC_EVALUATION"
+    },
+    {
+      "path": "evaluation/independent-publication-fix-verification-v0.1.md",
+      "sha256": "1f8259ef74d22ef64b7e91789190b70830ea2795b1574418768e1933c566e139",
+      "classification": "PUBLIC_EVALUATION"
+    },
+    {
+      "path": "evaluation/independent-whitepaper-review-v0.1.md",
+      "sha256": "220a09878063487208e6b1f023e691b8c72c9acedcdd207d291aec1855700bc5",
+      "classification": "PUBLIC_EVALUATION"
+    },
+    {
+      "path": "evaluation/independent-whitepaper-revision-verification-v0.1.md",
+      "sha256": "ca880310c8c29b925580d7b69d82f4e260f9d60d8b06e134a8632bcde181a870",
+      "classification": "PUBLIC_EVALUATION"
+    },
+    {
+      "path": "evaluation/public-research-release-review-v0.1.md",
+      "sha256": "f7bb502c2fe53dd74740918bf18c0de84f0dca44ee4d6512fc51ceca01c0e471",
+      "classification": "PUBLIC_EVALUATION"
+    },
+    {
+      "path": "evidence/source-manifest.json",
+      "sha256": "3767560ab3e9d1c8b7e93241ad07f68a234d2184b28ca83b4dc3fa3715de7348",
+      "classification": "PUBLIC_RESEARCH_ARTIFACT"
+    },
+    {
+      "path": "examples/synthetic-reality-cell.json",
+      "sha256": "5e7212b9e480a9c24dc30c37af9fcfa7ce7989624472632479dcd9db23db5078",
+      "classification": "PUBLIC_RESEARCH_ARTIFACT"
+    },
+    {
+      "path": "governance/agent-recommendation-gate.json",
+      "sha256": "3af399888127fa555af50993e7a1572e9aa49a5d3405dfdfdb3a500b472177ae",
+      "classification": "PUBLIC_GOVERNANCE_BOUNDARY"
+    },
+    {
+      "path": "governance/dcell-governance-model-v0.1.md",
+      "sha256": "97fdc077af59208f924e7c56e202f2ff04b39ffd4957dfd6fcf41ed9afb7886b",
+      "classification": "PUBLIC_RESEARCH_ARTIFACT"
+    },
+    {
+      "path": "governance/reuse-overlap-ownership-review.md",
+      "sha256": "75e0f5c67aca4e579e1b7d9648461ca7ca71ccea068038812811858ecd15d9c7",
+      "classification": "PUBLIC_GOVERNANCE_BOUNDARY"
+    },
+    {
+      "path": "research/research-questions.md",
+      "sha256": "1b055a5f5978aca02ad735ed618aee4e6a8e23e728631077e90dca68fe225681",
+      "classification": "PUBLIC_RESEARCH_ARTIFACT"
+    },
+    {
+      "path": "schema/README.md",
+      "sha256": "7ec4ba286642a7e22d2756791d035e3e71cde2e4a6cde17191941e763fc581f3",
+      "classification": "PUBLIC_CANONICAL"
+    },
+    {
+      "path": "schema/cell.schema.json",
+      "sha256": "4f3625a3b47a3230c27a29026e32228315d61763eed357abeec09e3f3e614fe1",
+      "classification": "PUBLIC_CANONICAL"
+    },
+    {
+      "path": "validation/README.md",
+      "sha256": "85dabb328e911f390cddd3a3418648850d457dc796215f0e41820a621ec04a6f",
+      "classification": "PUBLIC_CANONICAL"
+    }
+  ],
+  "manifest_self_digest_included": false,
+  "manifest_self_exclusion_reason": "SELF_REFERENTIAL_DIGEST_AVOIDANCE",
+  "remote_configured": false,
+  "push_executed": false,
+  "tag_created": false,
+  "release_created": false,
+  "publication_status": "NOT_PUBLISHED",
+  "release_status": "NOT_RELEASED",
+  "public_release_authorized": false,
+  "implementation_authorized": false
+}

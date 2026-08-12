@@ -1,0 +1,102 @@
+{
+  "artifact_kind": "REALITY_SYNCHRONIZATION_CELL_RESEARCH_RECORD",
+  "schema_version": "0.1",
+  "document_status": "RESEARCH_DRAFT",
+  "cell_id": "rsc-synthetic-room-001",
+  "identity": {
+    "name": "Synthetic Room Temperature Projection",
+    "research_status": "SYNTHETIC_OR_CONCEPTUAL_RECORD",
+    "classification_status": "NOT_EVALUATED_AS_DCELL"
+  },
+  "reality_target": {
+    "target_ref": "synthetic://room/001",
+    "target_type": "SYNTHETIC_ROOM",
+    "scope": "temperature_celsius_only",
+    "owner_status": "EXTERNAL"
+  },
+  "sources": [
+    {
+      "source_id": "src-synthetic-sensor-001",
+      "source_ref": "synthetic://sensor/temperature/001",
+      "source_kind": "SYNTHETIC_FIXTURE",
+      "observed_at": "2026-08-11T16:55:00Z",
+      "availability": "AVAILABLE"
+    }
+  ],
+  "observations": [
+    {
+      "observation_id": "obs-temperature-001",
+      "source_id": "src-synthetic-sensor-001",
+      "observation_kind": "OBSERVED",
+      "observed_at": "2026-08-11T16:55:00Z",
+      "payload": {"temperature_celsius": 24.0},
+      "verification_status": "NOT_VERIFIED"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "clm-temperature-diverged-001",
+      "statement": "The synthetic observation differs from the stored model projection by 2.0 degrees Celsius.",
+      "support_status": "SUPPORTED_FOR_DECLARED_SCOPE",
+      "observation_refs": ["obs-temperature-001"],
+      "evidence_refs": ["evr-synthetic-fixture-001"]
+    }
+  ],
+  "evidence_refs": [
+    {
+      "evidence_ref_id": "evr-synthetic-fixture-001",
+      "material_ref": "examples/synthetic-reality-cell.json",
+      "supports_claims": ["clm-temperature-diverged-001"],
+      "verification_status": "SOURCE_MATCH_ONLY"
+    }
+  ],
+  "state": {
+    "world_model_projection": {"temperature_celsius": 22.0},
+    "reality_projection": {"temperature_celsius": 24.0},
+    "projection_time": "2026-08-11T16:56:00Z"
+  },
+  "synchronization_assessment": {
+    "status": "DIVERGENCE_OBSERVED",
+    "freshness": "CURRENT_WITHIN_DECLARED_WINDOW",
+    "divergence": "PRESENT",
+    "coverage": "SUFFICIENT_FOR_DECLARED_SCOPE",
+    "basis_refs": ["obs-temperature-001", "clm-temperature-diverged-001"],
+    "assessed_at": "2026-08-11T16:56:00Z"
+  },
+  "history": [
+    {
+      "event_id": "evt-assessment-001",
+      "event_time": "2026-08-11T16:56:00Z",
+      "event_kind": "ASSESSMENT_CHANGED",
+      "basis_refs": ["obs-temperature-001"],
+      "summary": "Synthetic divergence was recorded for research illustration."
+    }
+  ],
+  "conflicts": [],
+  "uncertainties": [
+    "The sensor observation is synthetic and does not represent a real room.",
+    "No independent calibration or reality verification was performed."
+  ],
+  "update_proposal": {
+    "status": "DRAFT_RESEARCH_PROPOSAL",
+    "target_projection": "world_model_projection.temperature_celsius",
+    "proposed_changes": ["Review whether the model projection should be updated from 22.0 to 24.0."],
+    "reason_refs": ["clm-temperature-diverged-001"],
+    "application_authorized": false
+  },
+  "truth_boundaries": {
+    "observation_ne_fact": true,
+    "evidence_reference_ne_verification": true,
+    "schema_conformance_ne_reality_truth": true,
+    "synchronization_assessment_ne_model_update": true
+  },
+  "authorization": {
+    "runtime": false,
+    "reality_write": false,
+    "model_write": false,
+    "external_action": false,
+    "publication": false
+  },
+  "synthetic": true
+}
+
