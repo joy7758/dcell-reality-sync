@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "manifest_id": "DCELL-REALITY-SYNC-SANITIZED-PUBLIC-SNAPSHOT-MANIFEST-v0.1",
   "status": "PUBLIC_RESEARCH_DRAFT_AVAILABLE_NOT_RELEASED",
-  "generated_at": "2026-08-12T19:12:24Z",
+  "generated_at": "2026-08-12T19:30:45Z",
   "preparation_basis": [
     "PUBLIC-RESEARCH-RELEASE-REVIEW-v0.1",
     "INDEPENDENT-PUBLICATION-FIX-VERIFICATION-v0.1"
@@ -89,12 +89,12 @@
     },
     {
       "path": "README.md",
-      "sha256": "50ee0ab5b6b67186d58862d45249b1c85ac67abee6c90a44d3cf958cd5e2b00d",
+      "sha256": "1cee7d1f66cd8d5162e939e8a7ebcaa84e013cb9f31bcf2f3e5c5c879855c055",
       "classification": "PUBLIC_CANONICAL"
     },
     {
       "path": "STATUS.json",
-      "sha256": "b72153f7c52c9401dd137da270f4fbd02f0a35f0898fb65db4a8cda44845596a",
+      "sha256": "539de8670f6fbf2d0709d380a9fac6902815e5f61ab8b7ac84e2a5ad382bd439",
       "classification": "PUBLIC_CANONICAL"
     },
     {

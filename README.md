@@ -17,7 +17,7 @@ no GitHub Release, no tag, no DOI, no Zenodo archive, no executed Benchmark, no 
 and no implementation authorization.
 
 The repository is `joy7758/dcell-reality-sync`, its visibility is `PUBLIC`, its default branch is `main`,
-and its sanitized public history contains exactly four commits. The source internal history and source
+and its sanitized public history contains exactly five commits. The source internal history and source
 private commit email are not included. The current Whitepaper is v0.1.2 and remains a research draft.
 The publication pipeline is closed and further push is not authorized. The next research stage is
 `REALITY_DRIFT_BENCHMARK_PREREGISTRATION`.
@@ -32,7 +32,7 @@ They record the internal research process only and do not describe this candidat
 尚未建立科学验证，也未获得实现授权。
 
 仓库为 `joy7758/dcell-reality-sync`，visibility 为 `PUBLIC`，默认分支为 `main`，经清理的公开历史
-恰好包含四笔提交。源内部历史与源私人提交邮箱均未包含。当前 Whitepaper 为 v0.1.2，状态仍为研究
+恰好包含五笔提交。源内部历史与源私人提交邮箱均未包含。当前 Whitepaper 为 v0.1.2，状态仍为研究
 草案。发布流程已经关闭，进一步 push 未获授权。下一研究阶段为
 `REALITY_DRIFT_BENCHMARK_PREREGISTRATION`。
 
@@ -73,7 +73,7 @@ REMOTE_NAME=origin
 REMOTE_REPOSITORY_FULL_NAME=joy7758/dcell-reality-sync
 REMOTE_REPOSITORY_VISIBILITY=PUBLIC
 INITIAL_PRIVATE_STAGING_PUSH_EXECUTED=true
-GIT_COMMIT_COUNT=4
+GIT_COMMIT_COUNT=5
 PUBLICATION_STATUS=PUBLIC_RESEARCH_DRAFT_AVAILABLE
 RELEASE_STATUS=NOT_RELEASED
 THIS_CANDIDATE_PUSH_AUTHORIZED=false
@@ -258,7 +258,12 @@ Whitepaper v0.1 原稿保持不变。Whitepaper v0.1.1 以 Independent Whitepape
 `PASS_FOR_PUBLIC_RESEARCH_RELEASE_REVIEW`；公开研究发布审查结论为
 `PASS_WITH_REQUIRED_PUBLICATION_FIXES`。这些结论不构成公开研究草案、发布或实现授权。
 
-本仓库当前仅是经清理的公开研究草案，未创建 tag、GitHub Release、DOI 或 Zenodo 归档。当前下一
-gate 仅为 `INDEPENDENT_PUBLIC_REPOSITORY_POST_SWITCH_VERIFICATION_ONLY`。在新的明确授权前不继续
-push、不实现架构组件、不生成 Dataset、不运行 Benchmark、不调用模型，也不形成 DCell 优越性或
-科学验证主张；当前状态不是 GitHub Release，scientific validation 仍未建立，实现仍未授权。
+本仓库的公开发布与元数据对账流程已经关闭：
+
+`PUBLICATION_PIPELINE_CLOSED`
+
+下一研究阶段为 Reality Drift Benchmark Preregistration（现实漂移基准预注册）：
+
+`REALITY_DRIFT_BENCHMARK_PREREGISTRATION`
+
+除非新的研究任务获得单独、精确授权，否则不再继续 push。
