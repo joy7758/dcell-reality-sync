@@ -1,8 +1,8 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "manifest_id": "DCELL-REALITY-SYNC-SANITIZED-PUBLIC-SNAPSHOT-MANIFEST-v0.1",
-  "status": "PRIVATE_STAGING_ACTIVATION_METADATA_PREPARED_NOT_PUBLIC",
-  "generated_at": "2026-08-12T14:18:25Z",
+  "status": "PUBLIC_RESEARCH_DRAFT_AVAILABLE_NOT_RELEASED",
+  "generated_at": "2026-08-12T17:48:57Z",
   "preparation_basis": [
     "PUBLIC-RESEARCH-RELEASE-REVIEW-v0.1",
     "INDEPENDENT-PUBLICATION-FIX-VERIFICATION-v0.1"
@@ -12,7 +12,7 @@
   "sanitized_root_tree": "1ea21381e9ca8f620cbd541903bb1511128fff20",
   "repository": {
     "full_name": "joy7758/dcell-reality-sync",
-    "visibility": "PRIVATE",
+    "visibility": "PUBLIC",
     "remote_name": "origin",
     "default_branch": "main",
     "description": "Documentation-and-schema-only research prototype for a candidate semantic Reality Synchronization Layer for long-lived agents and world models.",
@@ -89,17 +89,17 @@
     },
     {
       "path": "README.md",
-      "sha256": "bd8248fa22f3e3a6e26b79794599d33fcfa0f201d0d5cf1eb0fbcb3dc7077dad",
+      "sha256": "d6cff75af3e828a6baa666fbebe7e6f322b79b607c5611279937561e420c57fd",
       "classification": "PUBLIC_CANONICAL"
     },
     {
       "path": "STATUS.json",
-      "sha256": "8566267d5550c3b8a5f248ff38c100e4ab5e06984b94120fdf85b00570498dcf",
+      "sha256": "71db5c68918b09532109b0cd7c788fd5a9d78f948eec325f0e3fa2a73ed70e44",
       "classification": "PUBLIC_CANONICAL"
     },
     {
       "path": "agent-index.json",
-      "sha256": "5389ce732127c69b03cc2c3f3eecdc36253bd400a716c8fa0e2e7ab84a85069b",
+      "sha256": "dd8a30b73ae61e92d80910fd8919a1a79c3f7219283ddd3364cc3877d52b4eb1",
       "classification": "PUBLIC_CANONICAL"
     },
     {
@@ -232,11 +232,16 @@
   "publication_activation_metadata_prepared": true,
   "publication_activation_metadata_commit_recorded": false,
   "publication_activation_metadata_commit_exclusion_reason": "SELF_REFERENTIAL_COMMIT_ID_AVOIDANCE",
-  "public_visibility_switch_authorized": false,
-  "public_visibility_switch_executed": false,
+  "public_status_metadata_commit_recorded": false,
+  "public_status_metadata_commit_exclusion_reason": "SELF_REFERENTIAL_COMMIT_ID_AVOIDANCE",
+  "public_visibility_switch_authorized": true,
+  "public_visibility_switch_executed": true,
+  "public_research_draft_authorized": true,
+  "final_public_metadata_push_authorized": true,
+  "final_public_metadata_push_executed": true,
   "tag_created": false,
   "release_created": false,
-  "publication_status": "NOT_PUBLISHED",
+  "publication_status": "PUBLIC_RESEARCH_DRAFT_AVAILABLE",
   "release_status": "NOT_RELEASED",
   "public_release_authorized": false,
   "implementation_authorized": false
