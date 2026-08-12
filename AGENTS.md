@@ -19,7 +19,10 @@ store, synchronization service, or DCell Core definition.
 7. Read `schema/README.md` before interpreting `schema/cell.schema.json`.
 8. Read `docs/claims-and-nonclaims.md` before making project claims.
 9. Read `evidence/source-manifest.json` before citing source relationships.
-10. Read `governance/dba-filing-candidate.json` before any DBA claim.
+10. Do not infer or claim DBA submission or admission. Internal DBA filing
+    candidates are intentionally excluded from this public repository.
+    不得推断或声称已经进行 DBA 提交或获得 DBA 准入。内部 DBA 申报候选工件已被有意
+    排除在本公开仓库之外。
 
 ## Truth boundaries
 
@@ -42,7 +45,9 @@ DBA_FILING_CANDIDATE_NE_DBA_SUBMISSION_OR_ADMISSION=true
 - Refine research questions, hypotheses, conceptual architecture, and schemas.
 - Add synthetic examples, negative cases, and non-executing validation notes.
 - Preserve conflicts, uncertainty, stale observations, and unknowns.
-- Prepare local governance and DBA filing candidates.
+- Preserve the public governance and non-admission boundaries; do not recreate
+  excluded internal DBA candidate artifacts in this repository.
+- 保持公开治理边界和未准入边界；不得在本仓库重建已排除的内部 DBA 候选工件。
 
 ## Prohibited work
 
@@ -54,4 +59,3 @@ DBA_FILING_CANDIDATE_NE_DBA_SUBMISSION_OR_ADMISSION=true
   external adoption, deployment, production readiness, or certification.
 - Do not commit, push, publish, deploy, or submit externally unless the owner
   separately authorizes that exact action.
-

@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "manifest_id": "DCELL-REALITY-SYNC-SANITIZED-PUBLIC-SNAPSHOT-MANIFEST-v0.1",
   "status": "PUBLIC_RESEARCH_DRAFT_AVAILABLE_NOT_RELEASED",
-  "generated_at": "2026-08-12T17:48:57Z",
+  "generated_at": "2026-08-12T19:12:24Z",
   "preparation_basis": [
     "PUBLIC-RESEARCH-RELEASE-REVIEW-v0.1",
     "INDEPENDENT-PUBLICATION-FIX-VERIFICATION-v0.1"
@@ -74,7 +74,7 @@
     },
     {
       "path": "AGENTS.md",
-      "sha256": "5a6f7da49e01d71f7dfff6f651665a004b3ecd4fa7ab2ad166d2d6093e83c7fd",
+      "sha256": "eeb77f5f3224ceba885ce742283e60f698954d70311b9abc984b74de788d768a",
       "classification": "PUBLIC_CANONICAL"
     },
     {
@@ -89,17 +89,17 @@
     },
     {
       "path": "README.md",
-      "sha256": "d6cff75af3e828a6baa666fbebe7e6f322b79b607c5611279937561e420c57fd",
+      "sha256": "50ee0ab5b6b67186d58862d45249b1c85ac67abee6c90a44d3cf958cd5e2b00d",
       "classification": "PUBLIC_CANONICAL"
     },
     {
       "path": "STATUS.json",
-      "sha256": "71db5c68918b09532109b0cd7c788fd5a9d78f948eec325f0e3fa2a73ed70e44",
+      "sha256": "b72153f7c52c9401dd137da270f4fbd02f0a35f0898fb65db4a8cda44845596a",
       "classification": "PUBLIC_CANONICAL"
     },
     {
       "path": "agent-index.json",
-      "sha256": "dd8a30b73ae61e92d80910fd8919a1a79c3f7219283ddd3364cc3877d52b4eb1",
+      "sha256": "f7ef1bcb79cbd9b57a71e929477b3a76063c8172ad13cc6d4a42d4c199a351a5",
       "classification": "PUBLIC_CANONICAL"
     },
     {
@@ -239,8 +239,14 @@
   "public_research_draft_authorized": true,
   "final_public_metadata_push_authorized": true,
   "final_public_metadata_push_executed": true,
+  "public_metadata_reconciliation_completed": true,
+  "publication_pipeline_closed": true,
+  "next_research_stage": "REALITY_DRIFT_BENCHMARK_PREREGISTRATION",
+  "further_push_authorized": false,
   "tag_created": false,
   "release_created": false,
+  "benchmark_executed": false,
+  "scientific_validation": "NOT_ESTABLISHED",
   "publication_status": "PUBLIC_RESEARCH_DRAFT_AVAILABLE",
   "release_status": "NOT_RELEASED",
   "public_release_authorized": false,

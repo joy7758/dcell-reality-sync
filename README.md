@@ -11,30 +11,30 @@ Cell 记录，帮助智能体识别其世界模型中的陈旧状态和现实偏
 
 ## Public Research Draft Status
 
-This repository is a sanitized public research draft repository. It contains only the two previously
-verified sanitized commits plus one public-status metadata finalization commit. It is public, but it has
+This repository is a sanitized public research draft repository. It contains only the previously
+verified sanitized commits plus this public-metadata reconciliation commit. It is public, but it has
 no GitHub Release, no tag, no DOI, no Zenodo archive, no executed Benchmark, no scientific validation,
 and no implementation authorization.
 
 The repository is `joy7758/dcell-reality-sync`, its visibility is `PUBLIC`, its default branch is `main`,
-and its sanitized public history contains exactly three commits. The source internal history and source
+and its sanitized public history contains exactly four commits. The source internal history and source
 private commit email are not included. The current Whitepaper is v0.1.2 and remains a research draft.
-Further push is not authorized. The only next gate is
-`INDEPENDENT_PUBLIC_REPOSITORY_POST_SWITCH_VERIFICATION_ONLY`.
+The publication pipeline is closed and further push is not authorized. The next research stage is
+`REALITY_DRIFT_BENCHMARK_PREREGISTRATION`.
 
 Internal commit hashes retained in historical review files may not resolve in this single-root snapshot.
 They record the internal research process only and do not describe this candidate's public Git history.
 
 ## 公开研究草案状态
 
-本仓库是经过清理的公开研究草案仓库。它只包含此前验证的两笔经清理提交，以及一笔公开状态元数据
-最终化提交。仓库已公开，但尚无 GitHub Release、tag、DOI 或 Zenodo 归档，尚未执行 Benchmark，
+本仓库是经过清理的公开研究草案仓库。它只包含此前验证的经清理提交，以及本次公开元数据对账提交。
+仓库已公开，但尚无 GitHub Release、tag、DOI 或 Zenodo 归档，尚未执行 Benchmark，
 尚未建立科学验证，也未获得实现授权。
 
 仓库为 `joy7758/dcell-reality-sync`，visibility 为 `PUBLIC`，默认分支为 `main`，经清理的公开历史
-恰好包含三笔提交。源内部历史与源私人提交邮箱均未包含。当前 Whitepaper 为 v0.1.2，状态仍为研究
-草案。进一步 push 未获授权。当前唯一下一 gate 为
-`INDEPENDENT_PUBLIC_REPOSITORY_POST_SWITCH_VERIFICATION_ONLY`。
+恰好包含四笔提交。源内部历史与源私人提交邮箱均未包含。当前 Whitepaper 为 v0.1.2，状态仍为研究
+草案。发布流程已经关闭，进一步 push 未获授权。下一研究阶段为
+`REALITY_DRIFT_BENCHMARK_PREREGISTRATION`。
 
 历史评审文件中的内部 commit hash 可能无法在本单根快照中解析；这些 hash 只记录内部研究过程，
 不表示本候选的公开仓库历史。
@@ -73,7 +73,7 @@ REMOTE_NAME=origin
 REMOTE_REPOSITORY_FULL_NAME=joy7758/dcell-reality-sync
 REMOTE_REPOSITORY_VISIBILITY=PUBLIC
 INITIAL_PRIVATE_STAGING_PUSH_EXECUTED=true
-GIT_COMMIT_COUNT=3
+GIT_COMMIT_COUNT=4
 PUBLICATION_STATUS=PUBLIC_RESEARCH_DRAFT_AVAILABLE
 RELEASE_STATUS=NOT_RELEASED
 THIS_CANDIDATE_PUSH_AUTHORIZED=false
@@ -87,7 +87,9 @@ SOURCE_INTERNAL_HISTORY_INCLUDED=false
 SOURCE_PERSONAL_COMMIT_EMAIL_INCLUDED=false
 TAG_CREATED=false
 RELEASE_CREATED=false
-NEXT_GATE=INDEPENDENT_PUBLIC_REPOSITORY_POST_SWITCH_VERIFICATION_ONLY
+NEXT_GATE=PUBLICATION_PIPELINE_CLOSED
+PUBLICATION_PIPELINE_CLOSED=true
+NEXT_RESEARCH_STAGE=REALITY_DRIFT_BENCHMARK_PREREGISTRATION
 ARCHITECTURE_PHASE_CLOSED=true
 CLAIM_BOUNDARY_FROZEN=true
 CLAIM_BOUNDARY_VERSION=0.1
@@ -157,10 +159,20 @@ Apache License, Version 2.0 授权。
 
 ## Public history boundary / 公开历史边界
 
-本候选从已核验的源内容树创建，不包含源内部 Git 历史和私人提交邮箱。候选 Git 历史包含使用所有者
-GitHub noreply 身份创建的经清理根提交，以及一笔公开激活元数据准备提交。当前仅配置 `origin`，
-其目标为私有暂存仓库 `joy7758/dcell-reality-sync`。本任务授权的两次私有 push 已消耗完毕；没有
-后续 push、tag、release、公开可见性切换或公开发布授权。
+The public repository contains a sanitized history only. The source
+internal repository history and personal commit email are not included.
+The repository is public, but it remains a research draft: no tag,
+GitHub Release, DOI, Zenodo archive, executed Benchmark, scientific
+validation, or implementation authorization exists. This metadata
+reconciliation closes the publication pipeline. Further push remains
+unauthorized unless a new research task requires an exact, separately
+approved change.
+
+本公开仓库只包含经过清理的历史，不包含源内部仓库历史和私人提交邮箱。
+仓库已经公开，但仍只是研究草案：不存在 tag、GitHub Release、DOI、
+Zenodo 归档、已执行 Benchmark、科学验证或实现授权。
+本次元数据对账完成后，发布流程关闭。除非新的研究任务确有需要并获得
+单独精确授权，否则不再继续 push。
 
 ## 候选数据流
 
